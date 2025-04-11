@@ -40,3 +40,7 @@ Once your pull request has been merged, you can delete your branch.
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Demo
+
+[Live Demo](https://trinhminhtriet.github.io/path-finding/)
