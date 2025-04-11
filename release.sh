@@ -31,10 +31,10 @@ function update_version() {
 	git push origin master
 
     GIT_COMMIT=$(git rev-parse --short HEAD)
-	if [ -d "./public" ]; then
+	if [ -d "./dist" ]; then
 		echo $(jq -n --arg branch "$GIT_BRANCH" --arg version "$NEW_VERSION" --arg commit "$GIT_COMMIT" --arg time "$BUILD_DATE_FORMAT" \
-		'{branch: $branch, version: $version, commit: $commit, time: $time}') > ./public/version.json
-		cat ./public/version.json
+		'{branch: $branch, version: $version, commit: $commit, time: $time}') > ./dist/version.json
+		cat ./dist/version.json
 		echo "Update version to $NEW_VERSION"
 	fi
 }
