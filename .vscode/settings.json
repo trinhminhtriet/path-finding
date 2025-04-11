@@ -1,7 +1,6 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier for formatting
-  "files.eol": "\n", // Ensure consistent line endings
   "javascript.format.enable": false, // Disable default JS formatter
   "typescript.format.enable": false, // Disable default TS formatter
   "eslint.validate": [
