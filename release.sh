@@ -50,7 +50,21 @@ function build() {
 }
 
 function deploy() {
+    if [ -d "./dist" ]; then
+        VERSION=$(jq -r '.version' package.json)
+        echo "Deploy version: $VERSION"
+        mv public/version.json dist/version.json
+        tar -czf v$VERSION.tar.gz dist
+        echo "Deploy success"
+    else
+        echo "Build failed, skip deploy"
+    fi
+}
+
+function release() {
     update_version
+    build
+    deploy
 }
 
 $@
