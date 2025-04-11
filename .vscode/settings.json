@@ -10,6 +10,12 @@
     "typescriptreact"
   ], // Enable ESLint for React files
   "editor.codeActionsOnSave": {
-    "source.fixAll": true // Auto-fix issues on save
+    "source.fixAll": "explicit"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
