@@ -26,6 +26,19 @@
 3. Run `npm install`
 4. Run `vite` or `npm run dev`
 
+## Usage
+
+1. Open your browser and go to `https://pages.trinhminhtriet.com/path-finding/`
+2. Select start and end points on the map:
+
+-   Left click: Place start node
+-   Right click: Place end node
+    The end node must be placed within the shown radius.
+
+3. Click Play to start the algorithm
+4. Select algorithm to visualize
+5. Select speed of visualization
+
 ## 🤝 How to contribute
 
 We welcome contributions!
