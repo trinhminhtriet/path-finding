@@ -57,7 +57,9 @@ canvas {
         flex-direction: column;
     }
 
-    input, button, a {
+    input,
+    button,
+    a {
         pointer-events: all;
     }
 
@@ -123,7 +125,7 @@ canvas {
         bottom: 20px;
     }
 
-    @media (hover: none)   {
+    @media (hover: none) {
         @media not all and (pointer: fine) {
             .btn-cinematic {
                 display: none;
@@ -134,7 +136,7 @@ canvas {
 
 .side-drawer {
     transition: transform 500ms ease-out, opacity 300ms ease-in;
-   
+
     &.cinematic {
         transform: translateX(-200%);
         opacity: 0;
@@ -147,13 +149,16 @@ canvas {
     right: 24px;
     bottom: 10vh;
 }
+
 .MuiSlider-root {
-    .MuiSlider-thumb, .MuiSlider-track {
+
+    .MuiSlider-thumb,
+    .MuiSlider-track {
         transition: box-shadow 300ms ease;
     }
 }
 
-.Mui-disabled { 
+.Mui-disabled {
     filter: saturate(0);
 }
 
@@ -222,13 +227,13 @@ canvas {
 }
 
 .github-corner {
-    z-index: 5000; 
-    position: absolute; 
-    top: 0; 
+    z-index: 5000;
+    position: absolute;
+    top: 0;
     right: 0;
     border: 0;
     transition: transform 500ms ease-out, opacity 300ms ease-in;
-    
+
     svg {
         color: #fff;
     }
@@ -336,7 +341,7 @@ canvas {
     display: none;
     pointer-events: none;
 
-    > * {
+    >* {
         pointer-events: all;
     }
 
@@ -350,6 +355,7 @@ canvas {
 .maplibregl-control-container {
     display: none;
 }
+
 .attrib-container {
     position: fixed;
     bottom: 0;
