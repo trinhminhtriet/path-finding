@@ -40,7 +40,7 @@ function update_version() {
 }
 
 function build() {
-    source .env
+    source .env.production
     echo "Build version: $BUILD_DATE"
     if [ -d "./dist" ]; then
         rm -rf ./dist
