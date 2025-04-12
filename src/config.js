@@ -3,7 +3,7 @@ export const MAP_STYLE = "./map_style.json";
 export const INITIAL_VIEW_STATE = {
     longitude: 106.660,
     latitude: 10.762,
-    zoom: 13,
+    zoom: 14,
     pitch: 0,
     bearing: 0
 };
@@ -11,10 +11,10 @@ export const INITIAL_VIEW_STATE = {
 export const INITIAL_COLORS = {
     startNodeFill: [70, 183, 128],
     startNodeBorder: [255, 255, 255],
-    endNodeFill: [152, 4, 12],
+    endNodeFill: [246, 79, 89],
     endNodeBorder: [0, 0, 0],
-    path: [70, 183, 128],
-    route: [165, 13, 32],
+    path: [18, 194, 233],
+    route: [246, 79, 89],
 };
 
 export const LOCATIONS = [
