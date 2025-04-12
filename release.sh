@@ -31,10 +31,10 @@ function update_version() {
         git push origin master
 
     GIT_COMMIT=$(git rev-parse --short HEAD)
-    if [ -d "./public" ]; then
+    if [ -d "./artifacts" ]; then
         echo $(jq -n --arg branch "$GIT_BRANCH" --arg version "$NEW_VERSION" --arg commit "$GIT_COMMIT" --arg time "$BUILD_DATE_FORMAT" \
-            '{branch: $branch, version: $version, commit: $commit, time: $time}') >./public/version.json
-        cat ./public/version.json
+            '{branch: $branch, version: $version, commit: $commit, time: $time}') >./artifacts/version.json
+        cat ./artifacts/version.json
         echo "Update version to $NEW_VERSION"
     fi
 }
@@ -53,8 +53,8 @@ function deploy() {
     if [ -d "./dist" ]; then
         VERSION=$(jq -r '.version' package.json)
         echo "Deploy version: $VERSION"
-        mv public/version.json dist/version.json
-        tar -czf v$VERSION.tar.gz dist
+        mv artifacts/version.json dist/version.json
+        tar -czf artifacts/v$VERSION.tar.gz dist
         echo "Deploy success"
     else
         echo "Build failed, skip deploy"
